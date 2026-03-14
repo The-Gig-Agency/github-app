@@ -1,0 +1,76 @@
+name: Agent Request
+description: Ask the GitHub App to run an implementation or investigation workflow.
+title: "[Agent Request] "
+labels:
+  - agent-run
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this out so the agent can execute with minimal back-and-forth.
+
+  - type: input
+    id: objective
+    attributes:
+      label: Objective
+      description: Short statement of the desired outcome.
+      placeholder: Build the onboarding dashboard for merchants
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Product or technical requirements.
+      placeholder: |
+        - show summary cards
+        - reuse existing APIs
+        - preserve current setup flow
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What must be true for this to be done.
+      placeholder: |
+        - UI renders in embedded app
+        - no regression to API key save
+        - PR created with summary
+    validations:
+      required: true
+
+  - type: input
+    id: target_repo
+    attributes:
+      label: Target Repo
+      description: Owner/repo to run against.
+      placeholder: The-Gig-Agency/some-repo
+    validations:
+      required: true
+
+  - type: input
+    id: branch_policy
+    attributes:
+      label: Branch Policy
+      description: Optional branch guidance.
+      placeholder: Create a feature branch and open a PR
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Anything the agent must not do.
+      placeholder: |
+        - do not change billing logic
+        - do not modify production secrets
+        - avoid schema migrations
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Links And Context
+      description: PRs, screenshots, docs, tickets, design links.
+      placeholder: Add URLs and references here
