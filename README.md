@@ -43,6 +43,7 @@ V1 is a thin dispatcher:
 - [Architecture](./docs/architecture.md)
 - [Webhook Flow](./docs/webhook-flow.md)
 - [Permissions](./docs/auth-and-permissions.md)
+- [Railway Setup](./docs/railway-setup.md)
 - [Rollout Plan](./docs/rollout-plan.md)
 
 ## Proposed V1 Trigger
@@ -61,4 +62,3 @@ An issue becomes actionable when either:
   - `agent-running`
   - `agent-blocked`
   - `agent-complete`
-
