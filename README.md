@@ -44,6 +44,10 @@ V1 is a thin dispatcher:
 - [Webhook Flow](./docs/webhook-flow.md)
 - [Permissions](./docs/auth-and-permissions.md)
 - [Railway Setup](./docs/railway-setup.md)
+- [Implementation Spec](./docs/implementation-spec.md)
+- [Orchestrator Contract](./docs/orchestrator-contract.md)
+- [GitHub App Creation Checklist](./docs/github-app-creation-checklist.md)
+- [Local Development](./docs/local-dev.md)
 - [Rollout Plan](./docs/rollout-plan.md)
 
 ## Proposed V1 Trigger
